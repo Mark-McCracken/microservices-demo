@@ -19,7 +19,7 @@ LoggingSystem.bootstrap {
 
 func makeClient(port: Int, group: EventLoopGroup) -> Hipstershop_CurrencyServiceServiceClient {
   let config = ClientConnection.Configuration(
-    target: .hostAndPort("localhost", port),
+    target: .hostAndPort("127.0.0.1", port),
     eventLoopGroup: group
   )
   let connection = ClientConnection(configuration: config)

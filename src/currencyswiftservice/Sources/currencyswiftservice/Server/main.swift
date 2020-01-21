@@ -35,7 +35,7 @@ func main(args: [String]) throws {
     port = 7000
   }
   let configuration = Server.Configuration(
-    target: .hostAndPort("127.0.0.1", port),
+    target: .hostAndPort("0.0.0.0", port),
     eventLoopGroup: group,
     serviceProviders: [provider]
   )
